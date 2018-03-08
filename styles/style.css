@@ -14,47 +14,46 @@ body {
     overflow: hidden;
 }
 
-
-
-
-
+/* Formatting for the nav bar atop each page */
 .nav ul {
     list-style: none;
-    background-color: blue;
+    background-color: #00d68b;      /* light green */
     text-align: center;
     padding: 0;
     margin: 0;
 }
 
 .nav li {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.2em;
-  border-bottom: none;
-  /* for stacked list (mobiles) border-bottom: 1px solid red; */
-  width: 7rem;
-  height: 3rem;
-  line-height: 3rem;
-  display: inline-block;
-  margin: 0 -4px 0 0;
-
-
+    font-weight: 700;
+    font-size: 1.25rem;
+    width: 8rem;
+    height: 3rem;
+    line-height: 3rem;
+    display: inline-block;
+    margin: 0 -5px 0 0;
 }
 
 .nav a {
-  text-decoration: none;
-  color: white;
-  display: block;
-  transition: .3s background-color;
+    text-decoration: none;
+    color: white;
+    display: block;
+
+    
 }
 
 .nav a:hover {
-  background-color: grey;
+    background-color: #007744;           /* dark green */
+    transition: background-color 0.5s;
+}
+
+.projects:hover {
+    background-color: #007744;
 }
 
 .nav a.active {
-  background-color: white;
-  color: blue;
-  cursor: default;
+    background-color: #b7b7b7;               /* grey */
+    color: #007744;                         /* dark green */
+    cursor: default;
 }
 
 .projects {
@@ -63,59 +62,45 @@ body {
 
 
 
-/* Dropdown menus */
-/* Format the dropdown content box. Default is not displayed (until it
-   is hovered over) */
+/* Dropdown menu for the Projects tab */
+
+/* Format the dropdown content box. */
 .dropdown-content {
-    display: inline-block;                        /*   NEEDS TO BE NONE  */
+    /*display: none;                           NEEDS TO BE 'NONE'  */
     position: absolute;
-    left: 0rem;
-    background-color: transparent;
-    line-height: 3rem;
-    width: 20vw;
+    left: 70vw;
+    line-height: 1.5rem;
+    width: 18rem;
     z-index: 1;
+    transition: left 0.5s;
 }
 
 /* Format the text content in the dropdown content box */
 .dropdown-content a {
-    font-variant: normal;
     font-size: 1rem;
-    color: black;
-    margin: 0.5vh 0;
-    padding: 0.75vh 0.5vw;
+    color: white;
+    margin: 0.5rem 0;
+    padding: 0;
     text-decoration: none;                  
-    text-align: left;
-    display: block;
+    text-align: center;
+    font-weight: 300;
     border-radius: 0.5rem;
-    background-color: white;
-    border: 1px solid #ff5300;
+    background-color: #007744;
+    border: 1px solid #007744;
 }
 
 /* Format the text content in the dropdown content box when it is
    hovered over */
 .dropdown-content a:hover {
-    background-color: #ff5300;
-    color: white;
+    background-color: #00d68b;
 }
 
 /* Shows dropdown content when the dropdown class is hovered over */
 .projects:hover .dropdown-content {
     display: block;
+    left: -5rem;
+    transition: left 0.5s ease-out;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 p {
@@ -163,26 +148,6 @@ h3 {
     font-weight: normal;
     font-size: 3rem;
 }
-
-
-
-/*  Remove default styling for links  */
-/* a:link, a:visited {
-    text-decoration: none;
-    color: white;
-    background-color: transparent;
-}
-
-/*  Remove default styling for links  
-a:active {
-    text-decoration: none;
-}*/
-
-/*ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}*/
 
 /* Hyperlink styling for main bodies of text */
 a.hyperlink {
@@ -245,7 +210,8 @@ a.hyperlink:hover {
     padding: 0;
     width: 60vw;
     height: 90vh;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /* define general properties class for all elements in the
@@ -273,79 +239,8 @@ a.hyperlink:hover {
 }
 
 #indexAboutMe {
-    /*font-size: 1rem;*/
-    text-align: justify;
+    text-align: left;
 }
-
-
-/* List without bullets */
-.noBullet {
-    display: block;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-decoration: none;
-}
-
-/*  Member of Horizontal list ("nav bar effect")  */
-.navBarMember {
-    margin: 0.75rem 0.5rem;
-    width: 10rem;
-    display: inline-block;
-    color: white;
-    opacity: 0.8;
-    border-radius: 0.5rem;
-    padding: 0rem 1rem;
-    position: relative;
-    font-size: 1.25rem;
-}
-
-/* specifics for each 'button' */
-
-#navbarHome {
-    background-color: #859992;
-    border: 1px solid #859992;
-}
-
-#navbarAboutme {
-    background-color: #ff9700;
-    border: 1px solid #ff9700;
-}
-
-#navbarClasses {
-    background-color: #00d68b;
-    border: 1px solid #00d68b;
-}
-
-#navbarProjects {
-    background-color: #ff5300;
-    border: 1px solid #ff5300;
-}
-
-#navbarContact {
-    background-color: #036dd4;
-    border: 1px solid #036dd4;
-}
-
-
-/*  Hovered-over 'button' */
-.navBar:hover li.navBarMember:hover {
-    transition: all 0.7s linear;
-    opacity: 1;
-}
-
-/*  Unhovered 'button' */
-.navBar:hover li.navBarMember {
-    transition: all 0.7s linear;
-    opacity: 0.1;
-
-}
-
-
-#indexNavBar {
-    margin-top: 3rem;
-}
-
 
 
 /*  Members of SocialMediaLogos  */
@@ -371,54 +266,6 @@ a.hyperlink:hover {
     text-align: center;
     width: 20%;
 }
-
-
-
-/* ONLY NEEDED FOR THE OLD NAV BAR 
-/* Dropdown menus 
-/* Format the dropdown content box. Default is not displayed (until it
-   is hovered over) 
-.dropdown-content {
-    display: inline-block;                        /*   NEEDS TO BE NONE  
-    position: absolute;
-    left: 0px;
-    background-color: transparent;
-    line-height: 2.5vh;
-    width: 20vw;
-    z-index: 1;
-}
-
-/* Format the text content in the dropdown content box 
-.dropdown-content a {
-    font-variant: normal;
-    font-size: 1rem;
-    color: black;
-    margin: 0.5vh 0;
-    padding: 0.75vh 0.5vw;
-    text-decoration: none;                  
-    text-align: left;
-    display: block;
-    border-radius: 0.5rem;
-    background-color: white;
-    border: 1px solid #ff5300;
-}
-
-/* Format the text content in the dropdown content box when it is
-   hovered over 
-.dropdown-content a:hover {
-    background-color: #ff5300;
-    color: white;
-}
-
-/* Shows dropdown content when the dropdown class is hovered over 
-.navBarMember:hover .dropdown-content {
-    display: block;
-}
-*/
-
-
-
-
 
 
 
@@ -466,18 +313,20 @@ a.hyperlink:hover {
 
 
 
-/*     ******************** PROJECTS PAGES ******************     */
+/*     General formatting for sections e.g. headers, footers     */
 
 .header {
     position: fixed;
     left: 0;
     top: 0;
-    height: 15%;
+    height: 6%;
     width: 100%;
     background-color: transparent;
+    overflow: visible;
     z-index: 1;
 }
 
+/* repl.it content page header */ 
 .replHeader {
     position: fixed;
     left: 0;
@@ -515,10 +364,10 @@ a.hyperlink:hover {
     box-sizing: border-box;
     position: fixed;
     left: 0;
-    top: 15%;
+    top: 6%;
     margin: 0;
     padding: 0 10vw;
-    height: 75%;
+    height: 84%;
     width: 100%;
     text-align: left;
     line-height: 1.5;
@@ -547,39 +396,14 @@ a.hyperlink:hover {
     font-size: 1.25rem;
 }
 
-/*.projectsFooterBox {
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 1rem 4vw 0 4vw;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    text-align: center;
-}*/
-
-/* Background image styling */
-.projectsImage {
-    position: fixed;
-    left: 0;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    background-size: 100% 100%;
-    
-}
-
 .projectsContent {
     box-sizing: border-box;
     position: fixed;
     left: 0;
-    top: 20vh;
+    top: 6%;
     margin: 0;
     padding: 0 6vw;
-    height: 65vh;
+    height: 84%;
     width: 100%;
     text-align: left;
     line-height: 1.5;
@@ -587,8 +411,7 @@ a.hyperlink:hover {
     overflow-y: auto;
 }
 
-
-/*  projects page "further links"  */
+/*  projects page "See more here" buttons  */
 .projectsLink {
     margin: 0;
     display: inline-block;
@@ -603,14 +426,11 @@ a.hyperlink:hover {
     border: 1px solid #ff5300; /* cadmium orange */
 }
 
-
 .projectsInfoLeft {
     float: left;
     margin: 0 0 8% 0;
     width: 60%;
 }
-
-
 
 .embedded_repl_iframe {
     box-sizing: border-box;
@@ -624,6 +444,21 @@ a.hyperlink:hover {
 .replPageBlurb {
     position: relative;
     left: 2%;
+}
+
+
+/* Background image formatting for the Projects pages */
+
+.projectsImage {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    background-size: 100% 100%;
 }
 
 #projectsCS50x {
@@ -659,9 +494,15 @@ a.hyperlink:hover {
   left: 0;
 }
 
+#projectsMDN-HTML-CSS {
+    background-image: url("../images/mdn-background-bw-50pcbright.png");
+    filter: blur(1px) opacity(0.6);
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
 
-
-
+/* repl.it content pages formatting */
 .replPageContent {
     position: fixed;
     left: 0;
@@ -697,8 +538,6 @@ button.backButton {
     cursor: pointer;
 }
 
-
-
 button.centralBackButton {
     position: fixed;
     left: 40%;
@@ -715,6 +554,7 @@ button.centralBackButton {
     cursor: pointer;
 }
 
+/* YouTube content pages formatting */
 
 .youtubePageContent {
     box-sizing: border-box;
@@ -743,6 +583,7 @@ button.centralBackButton {
 
 
 
+
 /*     ******************** CONTACT PAGE ******************     */
 
 .contactMainHeading {
@@ -761,10 +602,10 @@ button.centralBackButton {
     box-sizing: border-box;
     position: fixed;
     left: 0;
-    top: 20vh;
+    top: 6%;
     margin: 0;
     padding: 0 6vw;
-    height: 65vh;
+    height: 94%;
     width: 100%;
     text-align: center;
     line-height: 1.5;
@@ -793,15 +634,21 @@ button.centralBackButton {
 }
 
 #contactTextWWW {
-    padding-left: 1rem;
     font-family: 'Sacramento', cursive;
-    font-size: 4rem;
+    font-size: 3rem;
+}
+
+.termsOfUse {
+    text-align: left;
+    font-size: 0.75rem;
 }
 
 
 
 
 /*     ******************** CLASSES PAGE ******************     */
+
+/* Background image formatting */
 
 #classes {
     background-image: url("../images/36124472.jpg");
@@ -841,19 +688,6 @@ button.centralBackButton {
 
 /*     ******************** ABOUT ME PAGE ******************     */
 
-.aboutmeMainHeading {
-    box-sizing: border-box;
-    position: relative;
-    margin: 0 auto;
-    padding: 0.5rem 0 0 0;
-    left: 0;
-    top: 0;
-    width: 100%;
-    font-size: 3.5rem;
-    text-align: center;
-    font-family: 'Sacramento', cursive;
-}
-
 .aboutmeHeader {
     text-align: center;
     margin: 2rem 0 1rem 0;
@@ -879,8 +713,9 @@ button.centralBackButton {
 
 
 
+
 /*
-                        <<<<<   MEDIA QUERIES   >>>>>
+                                   <<<<<   MEDIA QUERIES   >>>>>
 */
 
 /* media query for mobiles in landscape */
@@ -897,24 +732,6 @@ button.centralBackButton {
     #indexSubHeading {
         padding-bottom: 2rem;
     }
-
-    .navBarMember {
-        margin: 0.25rem 0.25rem;
-        width: 9rem;
-    }
-
-    /*#indexMainHeading {
-        background-color: red;
-    }*/
-
-    #indexNavBar {
-        margin-top: 1rem;
-        padding: 0;
-    }
-
-    /*.projectsFooterBox {
-        padding-top: 0;
-    }*/
 
     .dropdown-content {
         line-height: 3vh;
@@ -958,11 +775,6 @@ and (min-width: 901px) {
         background-color: yellow;
     }*/
 
-    .navBarMember {
-        margin: 0.25rem 0.75rem;
-        width: 7rem;
-    }
-
     .dropdown-content-projectsLink {
         width: 22rem;
     }
@@ -986,15 +798,11 @@ and (min-width: 901px) {
 
 
 
-/*********************************************************************************/
-
-
-
 /* media query for mobiles in portrait */
 @media screen and (orientation: portrait) and (max-width: 600px) {
 
     html {
-        font-size: 2.7vw;
+        font-size: 3.5vw;
     }
 
     #indexImageContainer {
@@ -1008,10 +816,6 @@ and (min-width: 901px) {
         left: 0;
         width: 100vw;
         height: 55vh;
-    }
-
-    #indexNavBar {
-        margin-top: 1rem
     }
 
     .indexBlurb {
@@ -1028,14 +832,8 @@ and (min-width: 901px) {
         padding-top: 3rem;
     }
 
-    .navBarMember {
-        margin: 0.25rem;
-        width: 7rem;
-    }
-
     .dropdown-content {
-        left: 0;
-        width: 12rem;
+        left: 100vw;
     }
 
     .socialLogo {
@@ -1097,6 +895,11 @@ and (min-width: 901px) {
     .hr2 {
         margin: 4rem 7rem;
     }
+
+    .nav li {
+        height: 2rem;
+        line-height: 2rem;
+    }
 }
 
 
@@ -1131,18 +934,8 @@ and (min-width: 601px) {
         padding-top: 3rem;
     }
 
-    #indexNavBar {
-        padding: 0;
-    }
-
-    .navBarMember {
-        margin: 0.5rem;
-        width: 9rem;                /* changed compared to mobiles in portrait */
-    }
-
     .dropdown-content {
-        left: 0;
-        width: 20rem;
+        left: 100vw;
     }
 
     .socialLogo {
