@@ -932,6 +932,7 @@ and (min-width: 901px) {
     .contactMainHeading {
         font-size: 3rem;
     }
+
 }
 
 
@@ -1026,11 +1027,6 @@ and (min-width: 601px) {
     .hr2 {
         margin: 0 20vw;
     }
-
-    /*.socialMediaLogos {
-        padding-top: 5%;
-    }*/
-
 }
 
 
