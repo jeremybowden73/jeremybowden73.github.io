@@ -361,13 +361,13 @@ a.hyperlink:hover {
 .indexFooter {
     position: fixed;
     left: 40vw;
-    top: 90vh;
+    bottom: 0;
     height: 10vh;
     width: 60vw;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: transparent;
+    background-color: white;
     z-index: 1;
 }
 
