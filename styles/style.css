@@ -738,10 +738,15 @@ button.centralBackButton {
 
     #indexMainHeading {
         padding-top: 3rem;
+        font-size: 2.5rem;
     }
 
     #indexSubHeading {
         padding-bottom: 2rem;
+    }
+
+    .content {
+        height: 74vh;
     }
 
     .dropdown-content {
@@ -854,6 +859,11 @@ and (min-width: 901px) {
     #indexMainHeading {
         /*background-color: pink;*/
         padding-top: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .content {
+        height: 74vh;
     }
 
     .dropdown-content {
