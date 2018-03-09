@@ -435,7 +435,7 @@ a.hyperlink:hover {
 .projectsLink {
     margin: 0;
     display: inline-block;
-    top: 2rem;
+    top: 1.5rem;
     left: 2rem;
     font-size: 1.1rem;
     color: white;
@@ -745,7 +745,7 @@ button.centralBackButton {
     }
 
     .dropdown-content-projectsLink {
-        width: 22rem;
+        width: 20rem;
     }
 
     .headerSocialMedia {
@@ -886,9 +886,13 @@ and (min-width: 901px) {
         padding: 0 0.5rem;
     }
 
+    .projectsLink {
+        padding: 0.5rem 1rem;
+    }
+
     .dropdown-content-projectsLink {
         line-height: 1.5rem;
-        width: 14rem;
+        width: 12rem;
     }
 
     .embedded_repl_iframe {
