@@ -613,7 +613,7 @@ button.centralBackButton {
     padding: 2rem;
     left: 0;
     width: 100%;
-    font-size: 5rem;
+    font-size: 6rem;
     font-family: 'Sacramento', cursive;
     text-align: center;
 }
@@ -929,9 +929,9 @@ and (min-width: 901px) {
         margin: 4rem 20vw;
     }
 
-    /*.socialMediaLogos {
-        padding-top: 5%;
-    }*/
+    .contactMainHeading {
+        font-size: 4rem;
+    }
 }
 
 
