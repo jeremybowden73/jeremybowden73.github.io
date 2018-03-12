@@ -416,21 +416,6 @@ a.hyperlink:hover {
     font-size: 1.25rem;
 }
 
-.projectsContent {
-    box-sizing: border-box;
-    position: fixed;
-    left: 0;
-    top: 6vh;
-    margin: 0;
-    padding: 0 6vw;
-    height: 94vh;
-    width: 100%;
-    text-align: left;
-    line-height: 1.5;
-    background-color: transparent;
-    overflow-y: auto;
-}
-
 /*  projects page "See more here" buttons  */
 .projectsLink {
     margin: 0;
@@ -451,6 +436,16 @@ a.hyperlink:hover {
     margin: 0 0 8% 0;
     width: 60%;
 }
+
+.projetsInfoRight {
+    clear: left;
+    display: inline-block;
+    position: relative;
+    margin: 2vh 0;
+    left: 4vw;
+    width: 30%;
+}
+
 
 .embedded_repl_iframe {
     box-sizing: border-box;
@@ -521,6 +516,33 @@ a.hyperlink:hover {
     width: 100%;
     height: 100%;
 }
+
+#projectsMDN-HTML-CSS::before {
+  background-color: rgb(250, 250, 250);
+  opacity: 0.8;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: lighten;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#projectsMDN-HTML-CSS::after {
+  background-color: rgb(250, 0, 0);
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: lighten;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
 
 /* repl.it content pages formatting */
 .replPageContent {
@@ -703,6 +725,7 @@ button.centralBackButton {
 
 .aboutmeLeftColumn {
     float: left;
+    display: inline-block;
     margin: 2vh 0;
     width: 38vw;
 }
@@ -714,6 +737,35 @@ button.centralBackButton {
     margin: 2vh 0;
     left: 4vw;
     width: 38vw;
+}
+
+
+/*        ************************ MDN-HTML-CSS PAGE ********************* */
+
+/* Create three equal columns that floats next to each other */
+.mdnhtmlcss-column {
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    padding: 2% 4%;
+    text-align: left;
+}
+
+/* Clear floats after the columns */
+.mdnhtmlcss-row:after {
+    box-sizing: border-box;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.mdnhtmlcss-columnHeading {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 1rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -822,6 +874,10 @@ and (min-width: 901px) {
         font-size: 3.5vw;
     }
 
+    h2 {
+        font-size: 2.5rem;
+    }
+
     .nav li {
         height: 3vh;
         line-height: 3vh;
@@ -890,6 +946,10 @@ and (min-width: 901px) {
         padding: 0.5rem 1rem;
     }
 
+    .content {
+        padding: 0 6vw;
+    }
+
     .dropdown-content-projectsLink {
         line-height: 1.5rem;
         width: 12rem;
@@ -935,6 +995,11 @@ and (min-width: 901px) {
 
     .contactMainHeading {
         font-size: 3rem;
+    }
+
+    .mdnhtmlcss-column {
+        width: 100%;
+        padding: 10% 10%;
     }
 
 }
@@ -1030,6 +1095,11 @@ and (min-width: 601px) {
 
     .hr2 {
         margin: 0 20vw;
+    }
+
+     .mdnhtmlcss-column {
+        width: 50%;
+        padding: 6% 10%;
     }
 }
 
