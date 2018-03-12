@@ -1,6 +1,6 @@
 /* Global font properties and background colour   */
 html {
-    font-size: 1vw;
+    font-size: 1.2vw;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     background-color: transparent;
@@ -277,7 +277,7 @@ a.hyperlink:hover {
     left: 0%;
     background-color: transparent;
     line-height: 2rem;
-    width: 28rem;
+    width: 26rem;
     z-index: 1;
 }
 
@@ -688,7 +688,7 @@ button.centralBackButton {
 
 #classes::before {
   background-color: rgb(255, 255, 255);
-  opacity: 0.6;
+  opacity: 0.8;
   content: '';
   display: block;
   width: 100%;
@@ -700,7 +700,7 @@ button.centralBackButton {
 }
 
 #classes::after {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(225, 225, 225);
   content: '';
   display: block;
   width: 100%;
@@ -792,8 +792,12 @@ button.centralBackButton {
         padding-bottom: 2rem;
     }
 
+    .nav li {
+        width: 6rem;
+    }
+
     .dropdown-content {
-        line-height: 3vh;
+        line-height: 4vh;
     }
 
     .dropdown-content-projectsLink {
@@ -832,7 +836,7 @@ button.centralBackButton {
 and (min-width: 901px) {
 
     html {
-        font-size: 1.6vw;
+        font-size: 1.8vw;
     }
 
     /*#indexMainHeading {
@@ -840,7 +844,7 @@ and (min-width: 901px) {
     }*/
 
     .dropdown-content-projectsLink {
-        width: 22rem;
+        width: 20rem;
     }
 
     .headerSocialMedia {
@@ -871,7 +875,7 @@ and (min-width: 901px) {
 @media screen and (orientation: portrait) and (max-width: 600px) {
 
     html {
-        font-size: 3.5vw;
+        font-size: 3.75vw;
     }
 
     h2 {
@@ -952,7 +956,7 @@ and (min-width: 901px) {
 
     .dropdown-content-projectsLink {
         line-height: 1.5rem;
-        width: 12rem;
+        width: 10rem;
     }
 
     .embedded_repl_iframe {
