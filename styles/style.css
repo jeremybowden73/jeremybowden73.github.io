@@ -26,7 +26,7 @@ body {
 .nav li {
     font-weight: 700;
     font-size: 1.25rem;
-    width: 8rem;
+    width: 7rem;
     height: 6vh;
     line-height: 6vh;
     display: inline-block;
@@ -151,7 +151,7 @@ h3 {
 
 /* Hyperlink styling for main bodies of text */
 a.hyperlink {
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 1rem;
     font-weight: 500;
     color: #036dd4;
@@ -159,18 +159,14 @@ a.hyperlink {
 
 /* Hyperlink styling for h3 headings */
 a.hyperlinkh3 {
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 1.2rem;
     font-weight: 700;
     color: #036dd4;
 }
 
 a.hyperlink:hover {
-    text-decoration: underline;
-}
-
-a.hyperlink:hover {
-    text-decoration: underline;
+    background-color: #cee7ff;
 }
 
 .fontMonospace {
@@ -239,7 +235,7 @@ a.hyperlink:hover {
 }
 
 #indexAboutMe {
-    text-align: left;
+    text-align: center;
 }
 
 
@@ -796,7 +792,8 @@ button.centralBackButton {
     }
 
     .nav li {
-        width: 6rem;
+        width: 5rem;
+        font-size: 1rem;
     }
 
     .dropdown-content {
@@ -885,9 +882,13 @@ and (min-width: 901px) {
         font-size: 2.5rem;
     }
 
+    .header {
+        height: 9vh;
+    }
+
     .nav li {
-        height: 3vh;
-        line-height: 3vh;
+        height: 4.5vh;
+        line-height: 4.5vh;
     }
 
     #indexImageContainer {
@@ -953,7 +954,15 @@ and (min-width: 901px) {
         padding: 0.5rem 1rem;
     }
 
+    .projects:hover .dropdown-content {
+        display: block;
+        left: 0;
+        transition: left 0.5s ease-out;
+    }
+
     .content {
+        top: 9vh;
+        height: 91vh;
         padding: 0 6vw;
     }
 
